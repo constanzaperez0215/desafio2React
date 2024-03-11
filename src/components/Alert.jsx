@@ -1,7 +1,9 @@
-const Alert = () => {
+const Alert = ({children, color}) => {
   return (
-    <div>Alert</div>
-  ) 
+    <>
+      <div className={`alert alert-${color} my-2`}>{children}</div>
+  </>
+  )
 }
 
 export default Alert

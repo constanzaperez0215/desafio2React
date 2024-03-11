@@ -3,11 +3,13 @@ import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 
 
+
 const Formulario = ({setAlert}) => {
   const [nombre, setNombre] = useState("");
   const [ email, setEmail] = useState("");
   const [ password, setPassword] = useState("");
   const [ confirmPassword, setConfirmPassword] =useState("");
+
 
   const validarDatos = (e) => {
 
@@ -79,7 +81,7 @@ const Formulario = ({setAlert}) => {
       </Form.Group>
 
       <Button className='btn btn-dark mt-3' variant="primary" type="submit">
-        Agregar
+        Registrarse
       </Button>
     </Form>
   );

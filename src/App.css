@@ -1,6 +1,8 @@
 body{
   display: flex;
   justify-content: center;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-borroso-verde-bordes-azules_1035-3336.jpg);
+  background-size: cover;
 }
 
 .card{
@@ -11,6 +13,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(255, 255, 255, 0.678);
 }
 
 .contenedorIcon{
@@ -39,4 +42,9 @@ body{
 
 .formulario{
   width: 300px;
+}
+
+.btn{
+margin-left: 25px ;
+width: 250px;
 }

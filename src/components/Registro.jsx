@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Formulario from './Formulario'
 import SocialButton from './SocialButton'
+import Alert from './Alert'
 
 
 function Registro() {
@@ -17,8 +18,11 @@ function Registro() {
       </div>
 
       <p className='parrafo'>O usa tu email para registrarte</p>
+
       <Formulario setAlert={setAlert} />
-      {alert.msj && <alert color={alert.color}>{alert.msj}</alert>}
+
+      {alert.msj && <Alert color={alert.color}>{alert.msj}</Alert>}
+
     </div>
   )
 }
